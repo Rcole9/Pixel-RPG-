@@ -1,0 +1,16 @@
+# Godot build artifacts
+.import/
+export.cfg
+export_preset.cfg
+*.translation
+
+# Godot-specific ignores
+.godot/
+*.uid
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Godot auto-generated
+*.mono/
