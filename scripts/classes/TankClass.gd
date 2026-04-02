@@ -1,0 +1,51 @@
+# Tank ability definitions
+class_name TankClass
+
+const ABILITIES: Array = [
+{
+"index":       0,
+"name":        "Shield Wall",
+"cooldown":    20.0,
+"cost":        20,
+"description": "Boost defense by 60% for 6 s",
+"type":        "buff",
+"effect":      "shield_wall",
+"duration":    6.0,
+"color":       Color(0.2, 0.6, 1.0),
+},
+{
+"index":       1,
+"name":        "Taunt",
+"cooldown":    12.0,
+"cost":        15,
+"description": "Force all nearby enemies to target you for 8 s",
+"type":        "taunt",
+"effect":      "taunt",
+"radius":      200.0,
+"duration":    8.0,
+"color":       Color(1.0, 0.4, 0.0),
+},
+{
+"index":       2,
+"name":        "Cleave",
+"cooldown":    6.0,
+"cost":        25,
+"description": "Melee AoE dealing damage to all enemies in a 120° arc",
+"type":        "melee_aoe",
+"effect":      "cleave",
+"radius":      100.0,
+"damage_mult": 1.2,
+"color":       Color(0.9, 0.2, 0.1),
+},
+{
+"index":       3,
+"name":        "Juggernaut",
+"cooldown":    60.0,
+"cost":        50,
+"description": "Ultimate: Massive barrier + reflect damage for 10 s",
+"type":        "ultimate",
+"effect":      "juggernaut",
+"duration":    10.0,
+"color":       Color(0.0, 1.0, 0.8),
+},
+]

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128">
+<rect width="128" height="128" fill="#1a1a2e"/>
+<polygon points="64,10 118,40 118,88 64,118 10,88 10,40" fill="#4a0080" stroke="#9b59b6" stroke-width="3"/>
+<text x="64" y="72" font-size="32" text-anchor="middle" fill="#e8d5ff" font-family="sans-serif">RotV</text>
+</svg>

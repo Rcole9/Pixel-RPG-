@@ -1,0 +1,50 @@
+# Healer ability definitions
+class_name HealerClass
+
+const ABILITIES: Array = [
+{
+"index":       0,
+"name":        "Mend",
+"cooldown":    8.0,
+"cost":        30,
+"description": "Instantly restore 50 HP",
+"type":        "heal",
+"effect":      "direct_heal",
+"amount":      50,
+"color":       Color(0.2, 0.9, 0.3),
+},
+{
+"index":       1,
+"name":        "Regenerate",
+"cooldown":    15.0,
+"cost":        40,
+"description": "HoT: restore 15 HP/s for 8 s",
+"type":        "hot",
+"effect":      "regen",
+"duration":    8.0,
+"tick_amount": 15,
+"color":       Color(0.0, 1.0, 0.5),
+},
+{
+"index":       2,
+"name":        "Holy Shield",
+"cooldown":    18.0,
+"cost":        35,
+"description": "Absorb the next 80 damage",
+"type":        "shield",
+"effect":      "absorb_shield",
+"amount":      80,
+"color":       Color(1.0, 1.0, 0.3),
+},
+{
+"index":       3,
+"name":        "Resurrection Field",
+"cooldown":    60.0,
+"cost":        60,
+"description": "Ultimate: Heal 120 HP and cleanse all debuffs",
+"type":        "ultimate",
+"effect":      "res_field",
+"amount":      120,
+"color":       Color(1.0, 0.9, 0.0),
+},
+]

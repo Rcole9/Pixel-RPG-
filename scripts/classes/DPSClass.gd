@@ -1,0 +1,50 @@
+# DPS ability definitions
+class_name DPSClass
+
+const ABILITIES: Array = [
+{
+"index":       0,
+"name":        "Power Strike",
+"cooldown":    6.0,
+"cost":        20,
+"description": "High-damage single-target strike (2× damage)",
+"type":        "melee_single",
+"effect":      "power_strike",
+"damage_mult": 2.0,
+"color":       Color(1.0, 0.1, 0.1),
+},
+{
+"index":       1,
+"name":        "Void Burst",
+"cooldown":    12.0,
+"cost":        30,
+"description": "AoE explosion: damages all enemies within 150 px",
+"type":        "aoe",
+"effect":      "void_burst",
+"radius":      150.0,
+"damage_mult": 0.8,
+"color":       Color(0.5, 0.0, 1.0),
+},
+{
+"index":       2,
+"name":        "Shadow Step",
+"cooldown":    8.0,
+"cost":        15,
+"description": "Teleport 200 px toward cursor; apply Slow on enemies nearby",
+"type":        "mobility",
+"effect":      "shadow_step",
+"distance":    200.0,
+"color":       Color(0.1, 0.1, 0.3),
+},
+{
+"index":       3,
+"name":        "Death Mark",
+"cooldown":    60.0,
+"cost":        50,
+"description": "Ultimate: Mark target – it takes double damage for 8 s",
+"type":        "ultimate",
+"effect":      "death_mark",
+"duration":    8.0,
+"color":       Color(0.8, 0.0, 0.0),
+},
+]
