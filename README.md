@@ -1,49 +1,42 @@
-# Pixel RPG
+# Runes of the Void
 
-Pixel RPG is a retro-style role-playing game project focused on pixel-art visuals, exploration, and turn-based progression.
+A Godot (4.3.x) isometric pixel RPG prototype blending WoW-style roles (Tank/Healer/DPS), questing zones, and dungeon/raid-lite encounters with Destiny-like instanced missions, loot rarity, perks, and power level progression.
 
-## Status
+> Status: bootstrap repo docs only. Gameplay prototype will be delivered via PR.
 
-This repository is currently in early setup.
+## Requirements
+- Godot **4.3.x** (stable)
 
-## Goals
+## How to run (once the prototype PR lands)
+1. Install Godot 4.3.x.
+2. Clone this repo.
+3. Open the project in Godot.
+4. Press **Play**.
 
-- Build a playable pixel RPG loop (explore, fight, level up).
-- Support item collection and inventory management.
-- Add NPC interactions, quests, and world progression.
-- Keep the codebase beginner-friendly and easy to expand.
+## Controls (planned)
+- **Left click:** move
+- **Left click on enemy:** attack / interact
+- **1–4:** abilities
+- **I:** inventory
+- **Esc:** menu
 
-## Planned Features
+## Core gameplay loop (planned)
+- Overworld zone → quest giver → dungeon entrance → instanced dungeon → boss → loot
 
-- Tile-based map movement
-- Random or scripted encounters
-- Turn-based combat system
-- Character stats and leveling
-- Inventory and equipment
-- Save/load game state
-
-## Project Structure
-
-The project structure will be documented here as files are added.
-
-## Getting Started
-
-1. Clone the repository.
-2. Create your initial game scaffold (language/framework of your choice).
-3. Update this README with exact run/build instructions.
+## Design pillars
+- **Roles matter:** tank mitigation + taunt-like aggro, healer sustain/buffs, dps burst/AoE.
+- **Readable combat:** telegraphed attacks, status effects (burn/slow/weaken).
+- **Loot chase:** rarity tiers (common/rare/epic/legendary), affixes + perks.
+- **Progression:** power level influences damage dealt/taken.
 
 ## Roadmap
-
-- [ ] Initialize game project files
-- [ ] Add player movement on a simple map
-- [ ] Implement first combat prototype
-- [ ] Add inventory system
-- [ ] Add save/load support
-
-## Contributing
-
-Contributions are welcome. Open an issue to propose ideas or submit a pull request with improvements.
+- [ ] Godot project scaffolding + pixel-perfect/isometric setup
+- [ ] Player controller (click-to-move), combat, HUD
+- [ ] 3 starter classes (Tank/Healer/DPS)
+- [ ] Overworld + quest NPC
+- [ ] Dungeon instance + boss with 2 phases
+- [ ] Loot generator + inventory/equipment
+- [ ] Save/load
 
 ## License
-
-Add your preferred license here (for example: MIT).
+TBD
