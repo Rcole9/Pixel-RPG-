@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Runes of the Void - Pixel RPG</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            border: 2px solid #00ff00;
+            max-width: 800px;
+        }
+        h1 {
+            color: #00ff00;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .status {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .info {
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        button {
+            background: #00ff00;
+            color: #000;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #00cc00;
+            box-shadow: 0 0 10px #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Runes of the Void</h1>
+        <p style="font-size: 18px; margin-bottom: 20px;">An Isometric Pixel RPG</p>
+        
+        <div class="status">
+            <h3>Export Status</h3>
+            <p>This is a Godot 4.3 game that requires HTML5 export templates to deploy as a web game.</p>
+            <p style="margin-top: 15px; color: #ff9900;">⚠️ Full HTML5 build requires Godot export templates</p>
+        </div>
+        
+        <h3 style="margin-top: 30px;">Current Build Options:</h3>
+        
+        <div style="text-align: left; background: #1a1a1a; padding: 20px; border-radius: 5px; margin: 20px 0;">
+            <h4 style="color: #00ff00; margin-bottom: 10px;">Option 1: Download Desktop Build</h4>
+            <p>Export the game as a standalone executable for Windows, macOS, or Linux.</p>
+            <p style="color: #aaa; font-size: 12px; margin-top: 10px;">Recommended for local testing</p>
+        </div>
+
+        <div style="text-align: left; background: #1a1a1a; padding: 20px; border-radius: 5px; margin: 20px 0;">
+            <h4 style="color: #00ff00; margin-bottom: 10px;">Option 2: Play via Web VNC</h4>
+            <p>The game is currently running at:</p>
+            <code style="background: #0a0a0a; padding: 10px; display: inline-block; border-radius: 3px; margin-top: 10px;">
+                https://upgraded-chainsaw-7v6gg457x4q6hrq7q-6080.app.github.dev/vnc.html
+            </code>
+            <p style="color: #aaa; font-size: 12px; margin-top: 10px;">Real-time streaming with full interactivity</p>
+        </div>
+
+        <div class="info">
+            <p><strong>Game Details:</strong></p>
+            <p>• Status: ✅ Fully Playable</p>
+            <p>• Engine: Godot 4.3</p>
+            <p>• Resolution: 1280x720</p>
+            <p>• Genre: Isometric RPG with Combat & Loot</p>
+        </div>
+    </div>
+</body>
+</html>
